@@ -14,17 +14,17 @@
 }
 
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     min-width: 320px;
     min-height: 100vh;
 }
 
 .game-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 20px;
+    align-items: center;
+    ;
 }
 
 h1 {
@@ -49,7 +49,6 @@ h1 {
 }
 
 #answer-input {
-    width: 40%;
     padding: 12px;
     font-weight: bold;
     font-size: 1em;
@@ -61,14 +60,26 @@ h1 {
     text-align: center;
 }
 
+button#connect-wallet,
+button#disconnect-wallet {
+    background-color: #686868;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5em;
+    font-size: 1em;
+}
+
 button {
-    width: 100%;
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 10px;
     font-size: 1em;
     font-weight: 500;
-    background-color: #1a1a1a;
+    background-color: #bdae07;
+    color: #242424;
     cursor: pointer;
     transition: border-color 0.25s, background-color 0.25s;
 }
@@ -81,4 +92,11 @@ button {
 .score-board p {
     margin: 5px;
     font-size: 1.3em;
+}
+
+.id-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5px 15px;
 }

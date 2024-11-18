@@ -12,5 +12,9 @@
   "description": "",
   "devDependencies": {
     "vite": "5.4.11"
+  },
+  "dependencies": {
+    "ethers": "6.13.4",
+    "web3": "4.15.0"
   }
 }
